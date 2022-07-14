@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Inter:wght@400;500;600&family=Jost:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Oswald:wght@700&family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* colors */
+:root {
+  --primary-color: #e1f3fd;
+  --secondary-color: #fed200;
+  --text-color: #202020;
+  --button-one: #fffcf4;
+  --footer-bg: #2F2F30;
+
+
+  /* font size */
+  --big-font: 2rem;
+  --medium-font: 1.5rem;
+  --small-font: 0.98rem;
+  --first-weight: 600;
+  --second-weight: 500;
+  --third-weight: 400;
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  background-color: var(--primary-color);
+  line-height: 80px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2px 0px;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav .menu-btn i {
+  cursor: pointer;
+  display: none;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: var(--big-font);
+    font-weight: var(--first-weight);
+    color: var(--secondary-color);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 20px;
+}
+.active {
+  color: var(--secondary-color);
+}
+nav ul li a {
+  color: #888;
+  text-decoration: none;
+  font-size: var(--small-font);
+  padding: 4px 3px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+#click {
+  display: none;
+}
+
+/* Banner section
+ */
+
+ .banner-section{
+    width: 100%;
+    background-color: var(--primary-color);
+ }
+.fix__banner{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1.90rem;
+    position: relative;
+}
+.hero__box{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.hero__box h1 span{
+    font-size: 18px;
+    font-weight: 300;
+}
+.hero__box h1{
+    font-size: 2.50rem;
+    color: var(--text-color);
+}
+
+.hero__box .box p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    padding: .5rem 0;
+}
+p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    padding: .5rem 0;
+}
+.hero__box .box img{
+    width: 100%;
+    height: auto;
+}
+body > section > div > div.owl-nav{
+    max-width: 100px;
+}
+body > section > div > div.owl-nav > button.owl-next{
+    position: relative;
+    top: 0px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: var(--secondary-color);
+}
+
+body > section > div > div.owl-nav > button.owl-prev{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    
+}
+body > section > div > div.owl-nav > button.owl-next {
+    background-color: #000 !important;
+    color: #fff !important;
+    position: relative;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+}
+
+/* buttons Hero section */
+.contact-btn{
+    width: 130px;
+    height: 45px;
+    background-color: #efebeb;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #000;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.quote-btn{
+    width: 160px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-left: 1rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+/* dots disable */
+.owl-theme .owl-dots .owl-dot{
+    display: none;
+}
+
+
+/* our__service */
+
+.our__service{
+    width: 100%;
+    padding: 10% 0;
+}
+.title{
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+}    
+.title h2{
+    text-transform: uppercase;
+}
+.service__wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.90rem;
+    position: relative;
+}
+
+.service__box{
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.228);
+    padding: 1.3rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.service__box span{
+    width: 100%;
+    height: 6px;
+    display: block;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.service__box .left img{
+    width: 35px;
+    margin-left: 1rem;
+}
+.service__box .left h4{
+    margin-left: 25px;
+
+}
+.service__box p{
+    margin:.8rem  1rem;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.yellow{
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.service-btn{
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+
+
+/* about__company */
+
+.about__company{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 8% 0;
+}
+.about__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.90rem;
+}
+.about__wrapper .about__box img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* our__team */
+.our__team{
+    padding: 8% 0;
+}
+.team__banner img{
+    width: 100%;
+    height: auto;
+}
+.team__name{
+    flex-direction: column;
+    text-align: center;
+}
+.team__name p{
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+
+/* Testimonials */
+.testimonial{
+    width: 100%;
+    padding: 8% 0;
+    background-color: var(--primary-color);
+}
+.personInfo{
+    padding: 1% 0;
+}
+
+.testimonial-content{
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.228);
+    padding: .8rem;
+}
+.profile{
+    padding: 1rem;
+}
+.profile span{
+    font-size: 2.5rem;
+    margin-left: -1rem;
+}
+.imgBox img{
+    width: 100px;
+    margin: 20px 20px 0px 0px;
+}
+.imgBox {
+    text-align: center;
+}
+.imgBox h4,
+.imgBox p{
+    margin-left: -35px;
+    line-height: 15px;
+    padding-top: 1rem;
+}
+.imgBox p{
+    color: var(--secondary-color);
+}
+
+body > section.testimonial > div.slider.slick-initialized.slick-slider.slick-dotted > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+  }
+  .slick-dots li {
+    margin: 0 0.25rem;
+  }
+  .slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #000;
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+  .slick-dots li.slick-active button {
+    background-color: var(--secondary-color);
+  }
+  body > section.testimonial > div.slider.slick-initialized.slick-slider.slick-dotted > button.slick-prev.slick-arrow,
+  body > section.testimonial > div.slider.slick-initialized.slick-slider.slick-dotted > button.slick-next.slick-arrow{
+    display: none !important;
+  }
+
+
+
+/* ------------form__section---------- */
+
+.form__section{
+    padding: 5% 0;
+}
+
+
+.form__area{
+    padding: 1rem;
+    width: 100%;
+}
+
+.input__box input,
+.input__box textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #888;
+    margin: 1rem 0;
+    font-family: "Raleway", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+.input__box input[type=number]{
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+    
+}
+
+.send{
+    margin: 0 auto;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+body > section.our__service.container > div.service__wrap > div:nth-child(2) > a:hover{
+    color: #fff;
+}
+
+.black:hover{
+    background-color: #000;
+}
+.form__section .title h2{
+    position: relative;
+    width: 400px;
+    margin: 3rem auto;
+}
+.form__section .title h2::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px ;
+    left: 30px;
+    bottom: -10px;
+    background-color: var(--secondary-color);
+    transform: translateX(100px);
+    border-radius: 10px;
+}
+
+
+/* -------------footer__area------------ */
+.footer__area{
+    width: 100%;
+    padding: 5% 0;
+    background-color: var(--footer-bg);
+}
+
+.footer__wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+.f__box img{
+    width: 100%;
+    height: auto;
+}
+.f__box span{
+    float: left;
+    text-align: center;
+    margin-top: .8rem;
+    padding-right: .5rem;
+    color: #fff;
+}
+.f__box p{
+    color: #fff;
+}
+
+/* subscribe */
+
+.subscribe{
+    width: 70%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.subscribe input{
+    width: 80%;
+    padding: .2rem .8rem;
+    height: 40px;
+    background-color: #fff;
+    border: 0;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe button{
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    padding: .2rem;
+    height: 40px;
+    transition: all .3s ease;
+    position: absolute;
+    right: 5px;
+    color: #fff;
+    width: 120px;
+
+}
+
+/* copyright */
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+/* responsive nav */
+@media screen and (max-width: 950px) {
+  nav ul {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    background-color: #000;
+    height: 100vh;
+    width: 60%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  .menu-btn {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    margin: 0px 0;
+  }
+  nav ul li a {
+    display: block;
+  }
+  nav .menu-btn i {
+    cursor: pointer;
+    display: block;
+  }
+  nav {
+    width: 90%;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 100px;
+    position: relative;
+    left: 0px;
+  }
+  .logo img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    .hero__box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+    .contact-btn,
+    .quote-btn{
+        margin-top: 0;
+    }
+    .service__wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .service-btn{
+        margin-top: 2.5rem;
+    }
+    .service-btn{
+        margin-left: 30%;
+    }
+
+    .about__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    h1{
+        font-size: 1.80rem;
+        color: var(--text-color);
+    }
+    .team__name{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1.90rem;
+    }
+    .profile{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .form__area{
+        padding: 1rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .footer__wrap{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 969px){
+    h1{
+        font-size: 2.40rem;
+        color: var(--text-color);
+    }
+    .service__wrap{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
