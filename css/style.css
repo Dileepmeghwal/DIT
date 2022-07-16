@@ -204,6 +204,7 @@ body > section > div > div.owl-nav > button.owl-next {
 .our__service{
     width: 100%;
     padding: 10% 0;
+    overflow: hidden;
 }
 .title{
     text-align: center;
@@ -247,8 +248,9 @@ body > section > div > div.owl-nav > button.owl-next {
     align-items: center;
 }
 .service__box .left img{
-    width: 35px;
+    width: 10%;
     margin-left: 1rem;
+    height: auto;
 }
 .service__box .left h4{
     margin-left: 25px;
@@ -571,6 +573,12 @@ body > section.our__service.container > div.service__wrap > div:nth-child(2) > a
 
 
 @media screen and (min-width: 769px) {
+    html{
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px;
+    }
     .hero__box{
         display: grid;
         grid-template-columns: 1fr 1fr;
